@@ -360,7 +360,7 @@ a:hover {
   max-width: 610px;
   height: 584px;
   border-radius: 0px 32px 32px 0px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("/img/main/media_1.jpg"), lightgray -644.485px 0px/311.307% 105.822% no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("./../../../img/main/media_1.jpg"), lightgray -644.485px 0px/311.307% 105.822% no-repeat;
 }
 @media screen and (max-width: 1075px) {
   .section_1--left-photos .photo_1 {
