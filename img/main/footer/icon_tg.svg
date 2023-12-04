@@ -1,0 +1,13 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ico_tg 1">
+<path id="Vector" d="M9.79923 17.5C9.41046 17.5 9.47652 17.3532 9.34245 16.983L8.19922 13.2206L16.9992 8" fill="#C8DAEA"/>
+<path id="Vector_2" d="M9.7998 17.4998C10.0998 17.4998 10.2324 17.3625 10.3998 17.1998L11.9998 15.644L10.004 14.4404" fill="#A9C9DD"/>
+<path id="Vector_3" d="M10.0047 14.4418L14.8407 18.0147C15.3925 18.3191 15.7908 18.1614 15.9283 17.5023L17.8968 8.22598C18.0984 7.41796 17.5887 7.05148 17.0609 7.29115L5.50186 11.7483C4.71285 12.0647 4.71745 12.505 5.35804 12.7011L8.32434 13.6269L15.1916 9.29438C15.5159 9.0978 15.8133 9.20348 15.5691 9.42023" fill="url(#paint0_linear_456_396)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_456_396" x1="10.4985" y1="12.7379" x2="11.7807" y2="16.8853" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EFF7FC"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>

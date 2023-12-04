@@ -1,0 +1,14 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+// Header 
+@import './blocks/header/header';
+@import './blocks/header/nav';
+@import './blocks/header/menu';
+
+// Main
+@import './blocks/main/section_1';
+@import './blocks/main/section_1-footer';

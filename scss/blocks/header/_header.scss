@@ -1,0 +1,122 @@
+.header {
+    // margin-bottom: 200px;
+
+    @include mediaTablet {
+        margin-bottom: 50px;
+        margin-top: -40px;
+    }
+
+    &--top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        @include mediaTablet {
+            justify-content: flex-end;
+            padding-right: 60px;
+            position: fixed;
+            width: 100%;
+            margin-top: 40px;
+            z-index: 999;
+        }
+        
+        .header--logo {
+            @include mediaTablet {
+                flex: 1;
+            }
+        }
+
+        &--mobile {
+            position: fixed;
+            z-index: 9;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            row-gap: 45px;
+
+            padding: 40px 0;
+
+            .header--nav {
+                display: block;
+
+                .nav {
+                    &--list {
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: 25px;
+                    }
+                }
+            }
+            .header--menu-btn {
+                position: fixed;
+                top: 15px;
+                right: 15px;
+            }
+
+            .header--buttons {
+                @include mediaTablet {
+                    display: none;
+                }
+            }
+
+            .header--logo {
+                flex: 0;
+            }
+
+            .header--logo-image {
+                display: unset;
+            }
+            .header--logo-image-mobile {
+                display: none;
+            }
+        }
+    }
+
+    &--nav {
+        @include mediaTablet {
+            display: none;
+        }
+    }
+
+    &--buttons {
+        @include mediaTablet {
+            .nav--buttons-white {
+                display: none;
+            }
+
+            .nav--buttons-yellow {
+                margin-left: -30px;
+
+            }
+        }
+    }
+
+    &--menu {
+        display: none;
+        @include mediaTablet {
+            display: block;
+        }
+    }
+
+    &--logo-image {
+        @include mediaTablet {
+            display: none;
+        }
+    }
+    &--logo-image-mobile {
+        display: none;
+        @include mediaTablet {
+            display: unset;
+            padding-left: 5px;
+        }
+    }
+}
