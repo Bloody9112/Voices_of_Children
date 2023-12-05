@@ -1,6 +1,10 @@
 .section_4 {
     padding: 80px 0 64px 0;
 
+    @include mediaTablet {
+        padding: 28px 0;
+    }
+
     &--about_us {
         &-numbers {
             display: flex;
