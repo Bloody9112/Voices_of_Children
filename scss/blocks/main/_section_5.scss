@@ -58,13 +58,8 @@
 
             &:hover {
                 color: $blue;
-                transform: scale(1.05);
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-            }
-
-            &:active {
-                transform: translateY(2px);
-                box-shadow: none;
+                transform: scale(1.025);
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
             }
 
             @include mediaTablet {
@@ -91,17 +86,14 @@
             color: $white;
 
             transition:
+                color 0.2s ease-in,
                 transform 0.15s ease-in-out,
                 box-shadow 0.3s ease-in-out;
 
             &:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-            }
-
-            &:active {
-                transform: translateY(2px);
-                box-shadow: none;
+                color: $blue;
+                transform: scale(1.025);
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
             }
 
             @include mediaTablet {
@@ -138,13 +130,8 @@
 
                 &:hover {
                     color: $blue;
-                    transform: scale(1.05);
-                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-                }
-
-                &:active {
-                    transform: translateY(2px);
-                    box-shadow: none;
+                    transform: scale(1.025);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                 }
             }
         }
@@ -181,14 +168,9 @@
                     box-shadow 0.3s ease-in-out;
 
                 &:hover {
-                    color: #f8da4a;
-                    transform: scale(1.05);
-                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-                }
-
-                &:active {
-                    transform: translateY(2px);
-                    box-shadow: none;
+                    color: $blue;
+                    transform: scale(1.025);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                 }
             }
         }
@@ -495,12 +477,12 @@
                         box-shadow 0.3s ease-in-out;
 
                     &:hover {
-                        transform: scale(1.05);
-                        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                        transform: scale(1.025);
+                        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                     }
 
                     &:active {
-                        transform: translateY(2px);
+                        transform: translateY(1px);
                         box-shadow: none;
                     }
 
@@ -526,12 +508,12 @@
                         box-shadow 0.3s ease-in-out;
 
                     &:hover {
-                        transform: scale(1.05);
-                        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                        transform: scale(1.025);
+                        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                     }
 
                     &:active {
-                        transform: translateY(2px);
+                        transform: translateY(1px);
                         box-shadow: none;
                     }
 
@@ -558,12 +540,12 @@
                             box-shadow 0.3s ease-in-out;
 
                         &:hover {
-                            transform: scale(1.05);
-                            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.025);
+                            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                         }
 
                         &:active {
-                            transform: translateY(2px);
+                            transform: translateY(1px);
                             box-shadow: none;
                         }
                     }
@@ -587,12 +569,12 @@
                             box-shadow 0.3s ease-in-out;
 
                         &:hover {
-                            transform: scale(1.05);
-                            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.025);
+                            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                         }
 
                         &:active {
-                            transform: translateY(2px);
+                            transform: translateY(1px);
                             box-shadow: none;
                         }
                     }
@@ -699,11 +681,11 @@
 
                 &:hover {
                     transform: scale(1.025);
-                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
                 }
 
                 &:active {
-                    transform: translateY(2px);
+                    transform: translateY(1px);
                     box-shadow: none;
                 }
 

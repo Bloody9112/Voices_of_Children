@@ -1,8 +1,12 @@
 .footer {
     background: #72caed;
-    padding: 28px 0 133px 0;
+    padding: 28px 0 61px 0;
     display: flex;
     flex-direction: column;
+
+    @include mediaTablet {
+        padding: 28px 0 133px 0;
+    }
 
     &--top {
         display: flex;
@@ -44,6 +48,12 @@
                     line-height: 24px; /* 171.429% */
                     letter-spacing: -0.56px;
                     text-decoration-line: underline;
+
+                    transition: color 0.25s ease-in;
+
+                    &:hover {
+                        color: #f8da4a;
+                    }
                 }
             }
         }
@@ -124,6 +134,14 @@
                         flex-wrap: wrap;
                         gap: 12px;
 
+                        img {
+                            transition: transform 0.15s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.15);
+                            }
+                        }
+
                         @include mediaTablet {
                             gap: 16px;
                         }
@@ -141,12 +159,18 @@
                 gap: 29px;
                 padding-top: 8px;
 
-                p {
+                a {
                     color: $white;
                     font-size: 14px;
                     line-height: 24px; /* 171.429% */
                     letter-spacing: -0.56px;
                     text-decoration-line: underline;
+
+                    transition: color 0.15s ease-in;
+
+                    &:hover {
+                        color: #f8da4a;
+                    }
                 }
             }
         }
@@ -191,7 +215,7 @@
             display: flex;
             max-width: 400px;
             width: 100%;
-            padding: 12px 24px;
+            padding: 16px 25px;
             justify-content: center;
             align-items: center;
             gap: 8px;
@@ -209,12 +233,12 @@
                 box-shadow 0.3s ease-in-out;
 
             &:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+                transform: scale(1.025);
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
             }
 
             &:active {
-                transform: translateY(2px);
+                transform: translateY(1px);
                 box-shadow: none;
             }
 
@@ -248,7 +272,7 @@
                     line-height: 24px; /* 150% */
                     letter-spacing: -0.64px;
 
-                    padding: 12px 24px;
+                    padding: 15px 24px;
                     border-radius: 16px;
                     border: 1px solid var(--White, #fff);
                     min-width: 338px;
@@ -269,6 +293,7 @@
             }
 
             .yellow_button {
+                padding: 16px 36px;
                 background: #f8da4a;
             }
         }

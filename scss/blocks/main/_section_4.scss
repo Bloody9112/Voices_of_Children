@@ -131,7 +131,7 @@
                 }
             }
 
-            h1 {
+            p {
                 color: $blue;
                 font-size: 48px;
                 font-style: normal;
@@ -140,7 +140,7 @@
                 text-transform: uppercase;
             }
 
-            p {
+            span {
                 color: #182c3c;
                 font-size: 15px;
                 font-style: normal;
@@ -157,6 +157,7 @@
                 flex-direction: column;
                 gap: 4px;
             }
+
             .block {
                 display: none;
 
@@ -178,7 +179,7 @@
                     backdrop-filter: blur(25px);
                 }
 
-                h1 {
+                p {
                     color: #72caed;
                     font-size: 24px;
                     font-style: normal;
@@ -187,7 +188,7 @@
                     text-transform: uppercase;
                 }
 
-                p {
+                span {
                     // width: 311px;
                     color: #182c3c;
                     font-size: 14px;
@@ -241,7 +242,7 @@
                     backdrop-filter: blur(25px);
                 }
 
-                h1 {
+                p {
                     color: #72caed;
                     font-size: 48px;
                     font-weight: 600;
@@ -258,7 +259,7 @@
                     }
                 }
 
-                p {
+                span {
                     font-size: 15px;
                     line-height: normal;
                     letter-spacing: -0.3px;
@@ -290,7 +291,7 @@
                     backdrop-filter: blur(25px);
                 }
 
-                h1 {
+                p {
                     color: #72caed;
                     font-size: 48px;
                     font-weight: 600;
@@ -307,7 +308,7 @@
                     }
                 }
 
-                p {
+                span {
                     font-size: 15px;
                     line-height: normal;
                     letter-spacing: -0.3px;

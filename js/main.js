@@ -26,3 +26,4 @@ changeBackground(newsBlock1, './img/main/section_3/frame_1.jpg');
 changeBackground(newsBlock2, './img/main/section_3/frame_2.jpg');
 changeBackground(newsBlock3, './img/main/section_3/frame_3.jpg');
 
+
