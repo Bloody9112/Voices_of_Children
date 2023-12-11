@@ -27,3 +27,9 @@ changeBackground(newsBlock2, './img/main/section_3/frame_2.jpg');
 changeBackground(newsBlock3, './img/main/section_3/frame_3.jpg');
 
 
+AOS.init({
+    disable: function() {
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+    }
+  });

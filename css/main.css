@@ -890,8 +890,11 @@ a:hover {
   backdrop-filter: blur(15px);
   transition: transform 0.15s ease-in-out;
 }
+.section_2--main-blocks .section_2--block.main {
+  z-index: 1;
+}
 .section_2--main-blocks .section_2--block:hover {
-  transform: scale(1.025);
+  transform: scale(1.025) !important;
 }
 .section_2--main-blocks .section_2--block:active {
   transform: translateY(2px);
@@ -1668,8 +1671,11 @@ a:hover {
   background: #fff;
   transition: transform 0.15s ease-in-out;
 }
+.section_4--review-block.main {
+  z-index: 1;
+}
 .section_4--review-block:hover {
-  transform: scale(1.025);
+  transform: scale(1.025) !important;
 }
 .section_4--review-block:active {
   transform: translateY(2px);
@@ -2468,6 +2474,9 @@ a:hover {
   gap: 16px;
   max-width: 384px;
   width: 100%;
+}
+.section_6--media_about_us-columns .media_column.main {
+  z-index: 1;
 }
 .section_6--media_about_us-columns .media_column .media_image {
   position: relative;

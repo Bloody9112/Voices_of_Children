@@ -354,8 +354,12 @@
 
             transition: transform 0.15s ease-in-out;
 
+            &.main {
+                z-index: 1;
+            }
+
             &:hover {
-                transform: scale(1.025);
+                transform: scale(1.025) !important;
             }
 
             &:active {
@@ -418,6 +422,7 @@
                     }
                 }
             }
+
         }
     }
 }

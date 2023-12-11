@@ -105,6 +105,10 @@
                 max-width: 384px;
                 width: 100%;
 
+                &.main {
+                    z-index: 1;
+                }
+
                 .media_image {
                     position: relative;
 

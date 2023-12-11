@@ -91,15 +91,19 @@
                 backdrop-filter: blur(15px);
                 transition: transform 0.15s ease-in-out;
 
-                &:hover {
+                &.main {
+                    z-index: 1;
+                }
 
-                    transform: scale(1.025);
+                &:hover {
+                    transform: scale(1.025) !important;
                 }
             
                 &:active {
                     transform: translateY(2px); 
                     box-shadow: none; 
                 }
+
 
                 @include mediaTablet {
                     height: unset;
@@ -135,6 +139,7 @@
                     letter-spacing: -0.56px;
                 }
             }
+            
         }
     }
 }
