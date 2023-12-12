@@ -9,6 +9,10 @@
     <link rel="icon" href="./img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body>
@@ -74,10 +78,10 @@
 
                     </div>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li id="slide1" class="active"></li>
+                        <li id="slide2"></li>
+                        <li id="slide3"></li>
+                        <li id="slide4"></li>
                     </ul>
                 </div>
             </div>
@@ -202,7 +206,8 @@
                                         </li>
                                     </ul>
                                 </a>
-                                <a href="#!" class="news-block" id="newsBlock2" data-aos="fade-up-right" data-aos-duration="1250">
+                                <a href="#!" class="news-block" id="newsBlock2" data-aos="fade-up-right"
+                                    data-aos-duration="1250">
                                     <button>Звіти</button>
                                     <p>03.08.2023</p>
                                     <ul>
@@ -214,7 +219,8 @@
                                         </li>
                                     </ul>
                                 </a>
-                                <a href="#!" class="news-block" id="newsBlock3" data-aos="fade-up" data-aos-duration="1250">
+                                <a href="#!" class="news-block" id="newsBlock3" data-aos="fade-up"
+                                    data-aos-duration="1250">
                                     <button>Професійні партнерства</button>
                                     <p>13.07.2023</p>
                                     <ul>
@@ -299,7 +305,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="section_4--chart-right">
                                 <div class="block top-block">
                                     <p>100+</p>
@@ -322,8 +327,6 @@
                                     <span>євро залучено на програми для дітей війни</span>
                                     <img src='./img/main/section_4/eye-bg.png' alt="">
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -461,7 +464,8 @@
                             <div class="tilte">Очно</div>
                             <div class="text">Оберіть місто серед тих, де перебоувають психологи фонду:</div>
                             <div class="input">
-                                <input type="text" name="city" id="city" placeholder="Оберіть місто" required title="Це поле обов'язкове для заповнення">
+                                <input type="text" name="city" id="city" placeholder="Оберіть місто" required
+                                    title="Це поле обов'язкове для заповнення">
                                 <img src="./img/main/section_5/arrow-down_icon.svg" alt="arrow-down_icon">
                             </div>
                             <button class="blue_button" type="submit">Заповнити заявку</button>
@@ -596,7 +600,8 @@
                 <div class="footer--bottom-column">
                     <p>Слідкуйте за нашими новинками</p>
                     <form class="footer_input">
-                        <input type="email" name="email" id="email" placeholder="E-mail" required title="Це поле обов'язкове для заповнення">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required
+                            title="Це поле обов'язкове для заповнення">
                         <button type="submit">Підписатись</button>
                     </form>
                 </div>
@@ -608,7 +613,11 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
 </body>
 

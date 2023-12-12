@@ -364,19 +364,15 @@ a:hover {
   border-radius: 0px 32px 32px 0px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("../img/main/media_1.jpg"), lightgray -644.485px 0px/311.307% 105.822% no-repeat;
 }
-@media screen and (max-width: 1075px) {
-  .section_1--left-photos .photo_1 {
-    position: relative;
-    width: 100vw;
-    height: 85.3333333333vw;
-    max-width: 750px;
-    max-height: 555px;
-    padding: 0;
-    border-radius: 16px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 64px;
-  }
+.section_1--left-photos .mobile-styles {
+  position: relative;
+  width: 100vw;
+  height: 85.3333333333vw;
+  max-width: 750px;
+  max-height: 555px;
+  padding: 0;
+  border-radius: 16px;
+  margin-top: 64px;
 }
 .section_1--left-text {
   align-self: stretch;
@@ -440,6 +436,7 @@ a:hover {
   }
 }
 .section_1--left ul {
+  pointer-events: none;
   position: absolute;
   padding-left: 64px;
   padding-top: 613px;
@@ -459,20 +456,20 @@ a:hover {
     max-width: 343px;
   }
 }
-.section_1--left ul li:first-child {
-  width: 111.5px;
-  height: 3px;
-  flex: 1 0 0;
-  border-radius: 4px;
-  opacity: 0.99;
-  background: #fff;
-}
 .section_1--left ul li {
   width: 111.5px;
   height: 3px;
   flex: 1 0 0;
   border-radius: 4px;
   opacity: 0.32;
+  background: #fff;
+}
+.section_1--left ul li.active {
+  width: 111.5px;
+  height: 3px;
+  flex: 1 0 0;
+  border-radius: 4px;
+  opacity: 0.99;
   background: #fff;
 }
 .section_1--right {

@@ -23,19 +23,17 @@
                     linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%),
                     url("../img/main/media_1.jpg"),
                     lightgray -644.485px 0px / 311.307% 105.822% no-repeat;
+            }
 
-                @include mediaTablet {
-                    position: relative;
-                    width: 100vw;
-                    height: calc((100vw / 750) * 640);
-                    max-width: 750px;
-                    max-height: 555px;
-                    padding: 0;
-                    border-radius: 16px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    margin-top: 64px;
-                }
+            .mobile-styles {
+                position: relative;
+                width: 100vw;
+                height: calc((100vw / 750) * 640);
+                max-width: 750px;
+                max-height: 555px;
+                padding: 0;
+                border-radius: 16px;
+                margin-top: 64px;
             }
         }
 
@@ -105,6 +103,7 @@
         }
 
         ul {
+            pointer-events: none;
             position: absolute;
             padding-left: 64px;
             padding-top: 613px;
@@ -123,14 +122,14 @@
                 max-width: 343px;
             }
 
-            li:first-child {
-                width: 111.5px;
-                height: 3px;
-                flex: 1 0 0;
-                border-radius: 4px;
-                opacity: 0.99;
-                background: #fff;
-            }
+            // @include mediaTablet {
+            //     bottom: 50px;
+            //     justify-content: center;
+            //     gap: 8px;
+            //     padding-left: 0;
+            //     padding-top: 0;
+            //     max-width: 343px;
+            // }
 
             li {
                 width: 111.5px;
@@ -139,6 +138,15 @@
                 border-radius: 4px;
                 opacity: 0.32;
                 background: #fff;
+
+                &.active {
+                    width: 111.5px;
+                    height: 3px;
+                    flex: 1 0 0;
+                    border-radius: 4px;
+                    opacity: 0.99;
+                    background: #fff;
+                }
             }
         }
     }
@@ -152,7 +160,6 @@
         justify-content: flex-end;
         text-align: left;
         gap: 25px;
-        
 
         @include mediaTablet {
             display: flex;
