@@ -52,20 +52,34 @@ function startCounterAnimation() {
     const hasPlus = originalNumberText.includes('+');
     const plusSign = hasPlus ? '+' : '';
     let currentNumber = 0;
-    const animationDuration = targetNumber === 300000 ? 50 : 3000;
+    let animationDuration;
+
+    if (targetNumber > 100000) {
+      animationDuration = 200;
+    } else if (targetNumber > 1000) {
+      animationDuration = 500;
+    } else {
+      animationDuration = 1000;
+    }
 
     const updateNumber = () => {
       if (currentNumber < targetNumber) {
-        currentNumber += targetNumber === 300000 ? 200 : 1;
+        if (targetNumber > 100000) {
+          currentNumber += 1250;
+        } else if (targetNumber > 1000) {
+          currentNumber += 6;
+        } else {
+          currentNumber += 1;
+        }
         element.textContent = (Math.floor(currentNumber)).toLocaleString() + plusSign;
         setTimeout(updateNumber, animationDuration / targetNumber);
       }
     };
 
     updateNumber();
-
   });
 }
+
 
 window.addEventListener('scroll', () => {
   const sectionLeft = document.querySelector('.section_4--chart-left');
@@ -110,21 +124,10 @@ $(document).ready(function () {
         $('.section_1--left-photos ul li').removeClass('active');
         $('#slide1').addClass('active');
       }
-
-      applyMobileStyles();
-    }, 5000);
+    }, 4000);
   }
   
   autoplay();
-
-  function initSlider() {
-    $('.photo_1').slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    });
-  }
 
   function applyMobileStyles() {
     let windowWidth = $(window).width();
@@ -148,7 +151,12 @@ $(document).ready(function () {
     }
   }
 
-  handleSlider();
+  function applyMobileStylesOnLoad() {
+    handleSlider();
+    applyMobileStyles();
+  }
+
+  applyMobileStylesOnLoad();
 
   $(window).on('resize', function () {
     handleSlider();
@@ -156,6 +164,7 @@ $(document).ready(function () {
 
   $('.photo_1').on('afterChange', function (event, slick, currentSlide) {
     setActive(currentSlide);
+    applyMobileStyles(); // Додано виклик для застосування стилів при зміні слайду
   });
 
   $('.section_1--left-photos ul li').on('click', function () {
@@ -166,6 +175,7 @@ $(document).ready(function () {
 
   setActive(currentSlide);
 });
+
 
 
 
