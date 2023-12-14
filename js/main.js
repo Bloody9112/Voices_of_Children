@@ -202,21 +202,44 @@ function validateForm() {
 
 function validateFooterField(inputField) {
   var errorMsg = document.getElementById('footer-error-msg');
-  if (inputField.value === "") {
-      errorMsg.innerHTML = "Це поле обов'язкове для заповнення";
+  var email = inputField.value.trim();
+
+  if (email === "") {
+    errorMsg.innerHTML = "Це поле обов'язкове для заповнення";
+    errorMsg.style.display = "block";
+    return false;
+  } else {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    if (!emailPattern.test(email)) {
+      errorMsg.innerHTML = "Введіть дійсну електронну адресу";
       errorMsg.style.display = "block";
       return false;
-  } else {
+    } else {
       errorMsg.innerHTML = "";
       errorMsg.style.display = "none";
       return true;
+    }
   }
 }
 
 function validateFooterForm(event) {
   event.preventDefault();
   var input = document.getElementById('footer-email');
-  return validateFooterField(input);
+  var isValid = validateFooterField(input);
+
+  if (isValid) {
+    console.log('Форма відправлена!');
+  } else {
+    console.log('Форма не відправлена через помилки у введенні.');
+  }
 }
+
+// На випадок, якщо у вас є кнопка, яка запускає відправку форми
+var submitButton = document.querySelector('#submit-button');
+submitButton.addEventListener('click', function(event) {
+  var form = document.querySelector('.footer_input');
+  validateFooterForm(event);
+});
+
 
 
