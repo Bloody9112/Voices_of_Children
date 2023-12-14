@@ -100,7 +100,7 @@ $(document).ready(function () {
     'linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("./img/main/media_3.jpg") center / cover no-repeat',
     'linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("./img/main/media_4.jpg") center / cover no-repeat'
   ];
-  
+
   const photo1 = $('.photo_1');
   let currentSlide = 0;
   let mobileStylesApplied = false;
@@ -126,8 +126,6 @@ $(document).ready(function () {
       }
     }, 4000);
   }
-  
-  autoplay();
 
   function applyMobileStyles() {
     let windowWidth = $(window).width();
@@ -143,7 +141,7 @@ $(document).ready(function () {
 
   function handleSlider() {
     let windowWidth = $(window).width();
-  
+
     if (windowWidth <= 1075 && !mobileStylesApplied) {
       applyMobileStyles();
     } else if (windowWidth > 1075 && mobileStylesApplied) {
@@ -158,13 +156,15 @@ $(document).ready(function () {
 
   applyMobileStylesOnLoad();
 
+  autoplay();
+
   $(window).on('resize', function () {
     handleSlider();
   });
 
   $('.photo_1').on('afterChange', function (event, slick, currentSlide) {
     setActive(currentSlide);
-    applyMobileStyles(); // Додано виклик для застосування стилів при зміні слайду
+    applyMobileStyles();
   });
 
   $('.section_1--left-photos ul li').on('click', function () {
@@ -177,8 +177,46 @@ $(document).ready(function () {
 });
 
 
+/* Form Validation*/
+
+function validateField(inputField) {
+  var errorMsg = document.getElementById('error-msg');
+  if (inputField.value === "") {
+      errorMsg.innerHTML = "Це поле обов'язкове для заповнення";
+      errorMsg.style.display = "block";
+  } else {
+      errorMsg.innerHTML = "";
+      errorMsg.style.display = "none";
+  }
+}
+
+function validateForm() {
+  var input = document.getElementById('city');
+  validateField(input);
+  if (input.value === "") {
+      return false;
+  }
+  return true;
+}
 
 
+function validateFooterField(inputField) {
+  var errorMsg = document.getElementById('footer-error-msg');
+  if (inputField.value === "") {
+      errorMsg.innerHTML = "Це поле обов'язкове для заповнення";
+      errorMsg.style.display = "block";
+      return false;
+  } else {
+      errorMsg.innerHTML = "";
+      errorMsg.style.display = "none";
+      return true;
+  }
+}
 
+function validateFooterForm(event) {
+  event.preventDefault();
+  var input = document.getElementById('footer-email');
+  return validateFooterField(input);
+}
 
 

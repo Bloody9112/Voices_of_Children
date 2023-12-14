@@ -2322,6 +2322,20 @@ a:hover {
   color: #424242;
   opacity: 0.4;
 }
+.section_5--bottom-offline .error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+  display: none;
+}
+@media screen and (max-width: 1075px) {
+  .section_5--bottom-offline .error-message {
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.56px;
+    margin-bottom: 12px;
+  }
+}
 .section_5--bottom-offline .blue_button {
   display: flex;
   justify-content: center;
@@ -2744,7 +2758,7 @@ a:hover {
 @media screen and (max-width: 1075px) {
   .footer--bottom {
     flex-direction: column;
-    gap: 20px;
+    gap: 22.5px;
     max-width: 400px;
     width: 100%;
   }
@@ -2798,6 +2812,7 @@ a:hover {
   }
 }
 .footer--bottom-column {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2838,4 +2853,22 @@ a:hover {
 .footer--bottom-column .yellow_button {
   padding: 16px 36px;
   background: #f8da4a;
+}
+.footer--bottom-column .error-message {
+  display: none;
+  position: absolute;
+  bottom: -28px;
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.56px;
+}
+@media screen and (max-width: 1075px) {
+  .footer--bottom-column .error-message {
+    font-size: 12px;
+    line-height: 18px; /* 150% */
+    letter-spacing: -0.48px;
+    bottom: -21px;
+  }
 }

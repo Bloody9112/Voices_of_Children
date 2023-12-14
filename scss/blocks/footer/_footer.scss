@@ -192,7 +192,7 @@
 
         @include mediaTablet {
             flex-direction: column;
-            gap: 20px;
+            gap: 22.5px;
             max-width: 400px;
             width: 100%;
         }
@@ -253,6 +253,7 @@
         }
 
         &-column {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -295,6 +296,24 @@
             .yellow_button {
                 padding: 16px 36px;
                 background: #f8da4a;
+            }
+
+            .error-message {
+                display: none;
+                position: absolute;
+                bottom: -28px;
+                color: red;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px; /* 171.429% */
+                letter-spacing: -0.56px;
+
+                @include mediaTablet {
+                    font-size: 12px;
+                    line-height: 18px; /* 150% */
+                    letter-spacing: -0.48px;
+                    bottom: -21px;
+                }
             }
         }
     }

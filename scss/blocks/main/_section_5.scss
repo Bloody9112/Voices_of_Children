@@ -656,6 +656,21 @@
                 opacity: 0.4;
             }
 
+            .error-message {
+                color: red;
+
+                font-size: 16px;
+                margin-top: 5px;
+                display: none;
+
+                @include mediaTablet {
+                    font-size: 14px;
+                    line-height: 22px; /* 157.143% */
+                    letter-spacing: -0.56px;
+                    margin-bottom: 12px;
+                }
+            }
+
             .blue_button {
                 display: flex;
                 justify-content: center;

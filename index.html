@@ -460,16 +460,17 @@
                             </div>
                         </div>
 
-                        <form class="section_5--bottom-offline">
+                        <form class="section_5--bottom-offline" onsubmit="return validateForm()" novalidate>
                             <div class="tilte">Очно</div>
-                            <div class="text">Оберіть місто серед тих, де перебоувають психологи фонду:</div>
+                            <div class="text">Оберіть місто серед тих, де перебувають психологи фонду:</div>
                             <div class="input">
                                 <input type="text" name="city" id="city" placeholder="Оберіть місто" required
-                                    title="Це поле обов'язкове для заповнення">
+                                    title="Це поле обов'язкове для заповнення" oninput="validateField(this)">
                                 <img src="./img/main/section_5/arrow-down_icon.svg" alt="arrow-down_icon">
                             </div>
+                            <p id="error-msg" class="error-message"></p>
                             <button class="blue_button" type="submit">Заповнити заявку</button>
-                            <p>Якшо у переліку немає Вашого міста, ви можете отримати допомогу від наших психологів, які
+                            <p>Якщо у переліку немає Вашого міста, ви можете отримати допомогу від наших психологів, які
                                 працюють в онлайн форматі</p>
                         </form>
                     </div>
@@ -599,9 +600,10 @@
                 </div>
                 <div class="footer--bottom-column">
                     <p>Слідкуйте за нашими новинками</p>
-                    <form class="footer_input">
-                        <input type="email" name="email" id="email" placeholder="E-mail" required
-                            title="Це поле обов'язкове для заповнення">
+                    <form class="footer_input" onsubmit="return validateFooterForm(event)" novalidate>
+                        <input type="email" name="footer-email" id="footer-email" placeholder="E-mail" required
+                            title="Це поле обов'язкове для заповнення" oninput="validateFooterField(this)">
+                        <p id="footer-error-msg" class="error-message"></p>
                         <button type="submit">Підписатись</button>
                     </form>
                 </div>
