@@ -106,8 +106,20 @@ $(document).ready(function () {
   let mobileStylesApplied = false;
 
   function changeBackgroundImage(index) {
-    photo1.css('background', images[index]);
+    const photo = $('.photo_1');
+  
+    photo.addClass('fade-out');
+  
+    setTimeout(function () {
+      photo.css('background', images[index]);
+      photo.removeClass('fade-out').addClass('fade-in');
+      setTimeout(function () {
+        photo.removeClass('fade-in');
+      }, 250); 
+    }, 250);
   }
+  
+  
 
   function setActive(index) {
     $('.section_1--left-photos ul li').removeClass('active');
@@ -124,7 +136,7 @@ $(document).ready(function () {
         $('.section_1--left-photos ul li').removeClass('active');
         $('#slide1').addClass('active');
       }
-    }, 4000);
+    }, 5000);
   }
 
   function applyMobileStyles() {
@@ -178,6 +190,7 @@ $(document).ready(function () {
 
 
 /* Form Validation*/
+
 
 function validateField(inputField) {
   var errorMsg = document.getElementById('error-msg');
@@ -234,7 +247,6 @@ function validateFooterForm(event) {
   }
 }
 
-// На випадок, якщо у вас є кнопка, яка запускає відправку форми
 var submitButton = document.querySelector('#submit-button');
 submitButton.addEventListener('click', function(event) {
   var form = document.querySelector('.footer_input');

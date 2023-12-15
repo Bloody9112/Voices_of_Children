@@ -364,7 +364,15 @@ a:hover {
   height: 584px;
   border-radius: 0px 32px 32px 0px;
   background-size: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 61.29%), linear-gradient(0deg, rgba(24, 44, 60, 0.3) 0%, rgba(24, 44, 60, 0.3) 100%), url("../img/main/media_1.jpg") center/cover no-repeat; /* Оновлено дані з вашого JS */
+}
+.section_1--left-photos .photo_1.fade-out {
+  opacity: 0.5;
+}
+.section_1--left-photos .photo_1.fade-in {
+  opacity: 1;
 }
 .section_1--left-photos .mobile-styles {
   position: relative;
@@ -406,6 +414,7 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 1075px) {
   .section_1--left-text-pc {
@@ -422,6 +431,7 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   gap: 8px;
   display: none;
 }
@@ -615,6 +625,7 @@ a:hover {
   border-top: 1px solid #fff;
   background: rgba(114, 202, 237, 0.8);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 @media screen and (max-width: 1075px) {
   .section_1--bottom {
@@ -887,6 +898,7 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   transition: transform 0.15s ease-in-out;
 }
 .section_2--main-blocks .section_2--block.main {
@@ -1445,6 +1457,7 @@ a:hover {
   border: 1px solid #e1e8ee;
   background: rgba(240, 246, 249, 0.3);
   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .section_4--chart-left .block-bottom {
   display: flex;
@@ -1464,6 +1477,7 @@ a:hover {
   border: 1px solid #e1e8ee;
   background: rgba(240, 246, 249, 0.3);
   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .section_4--chart-left p {
   color: #72CAED;
@@ -1507,6 +1521,7 @@ a:hover {
     border: 1px solid #e1e8ee;
     background: rgba(240, 246, 249, 0.3);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
   }
 }
 .section_4--chart-right .block p {
@@ -1551,6 +1566,7 @@ a:hover {
   border: 1px solid #e1e8ee;
   background: rgba(240, 246, 249, 0.3);
   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 }
 @media screen and (max-width: 1075px) {
   .section_4--chart-right .block.main {
@@ -1564,6 +1580,7 @@ a:hover {
     border: 1px solid #e1e8ee;
     background: rgba(240, 246, 249, 0.3);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
   }
 }
 .section_4--chart-right .block.main p {
@@ -1611,6 +1628,7 @@ a:hover {
     border: 1px solid #e1e8ee;
     background: rgba(240, 246, 249, 0.3);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
   }
 }
 .section_4--chart-right .block.top-block p {
@@ -2508,6 +2526,7 @@ a:hover {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   transition: transform 0.15s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .section_6--media_about_us-columns .media_column .media_image .media_button:hover {
@@ -2582,7 +2601,7 @@ a:hover {
 }
 @media screen and (max-width: 1075px) {
   .footer {
-    padding: 28px 0 133px 0;
+    padding: 28px 0 35px 0;
   }
 }
 .footer--top {
