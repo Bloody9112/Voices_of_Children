@@ -33,6 +33,11 @@
                 }
             }
 
+            &-image {
+                max-width: 282px;
+                max-height: 48px;
+            }
+
             .privacy {
                 display: flex;
                 flex-direction: row;

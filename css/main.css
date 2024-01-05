@@ -235,6 +235,10 @@ a:hover {
     display: block;
   }
 }
+.header--logo-image {
+  max-width: 188px;
+  max-height: 32px;
+}
 @media screen and (max-width: 1050px) {
   .header--logo-image {
     display: none;
@@ -242,6 +246,8 @@ a:hover {
 }
 .header--logo-image-mobile {
   display: none;
+  max-width: 40px;
+  max-height: 40px;
 }
 @media screen and (max-width: 1050px) {
   .header--logo-image-mobile {
@@ -361,7 +367,7 @@ a:hover {
 }
 
 .section_1 {
-  min-height: 809px;
+  min-height: 752px;
   margin-top: 66px;
 }
 @media screen and (max-width: 1050px) {
@@ -628,6 +634,7 @@ a:hover {
 .section_1--right-icons {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
   min-height: 584px;
   gap: 12px;
   min-width: 33px;
@@ -2687,6 +2694,10 @@ a:hover {
     width: 100%;
     height: auto;
   }
+}
+.footer--top-left-image {
+  max-width: 282px;
+  max-height: 48px;
 }
 .footer--top-left .privacy {
   display: flex;

@@ -126,12 +126,17 @@
     }
 
     &--logo-image {
+        max-width: 188px;
+        max-height: 32px;
         @include mediaTablet {
             display: none;
         }
     }
     &--logo-image-mobile {
         display: none;
+
+        max-width: 40px;
+        max-height: 40px;
         @include mediaTablet {
             display: unset;
             padding-left: 5px;
