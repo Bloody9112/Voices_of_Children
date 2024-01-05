@@ -367,6 +367,7 @@ a:hover {
 @media screen and (max-width: 1050px) {
   .section_1 {
     margin-top: 0px;
+    min-height: 674px;
   }
 }
 .section_1--left-photos {
