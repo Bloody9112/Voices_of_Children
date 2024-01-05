@@ -125,6 +125,7 @@
             }
 
             .section_3--left {
+                position: relative;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
@@ -138,9 +139,11 @@
                     justify-content: center;
                     align-items: center;
                     align-self: unset;
+                    
                 }
 
                 &-main {
+                    position: relative;
                     max-width: 792px;
                     width: 100%;
                     height: 263px;
@@ -151,12 +154,34 @@
                     border-radius: 32px;
                     border: 1px solid #e3e7ea;
 
-                    background: url("../img/main/section_3/frame_1.jpg");
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 41.99%;
+                        z-index: 1;
+                        background: linear-gradient(to right, rgba(24, 44, 60, 0.4) 0%, rgba(24, 44, 60, 0.4) 100%);
+                        border-radius: 0 32px 32px 0;
+                    }
+
+                    background-image: url("../img/main/section_3/frame_1.jpg");
                     background-position: right;
                     background-repeat: no-repeat;
-
+                    
+                    position: relative;
+                    z-index: 2;
+                    
                     @include mediaTablet {
                         display: none;
+                    }
+                    
+                    .youtube-image {
+                        position: absolute;
+                        top: 103.49px;
+                        right: 190px;
+                        z-index: 3;
                     }
 
                     button {
@@ -224,6 +249,8 @@
                             }
                         }
                     }
+
+                    
                 }
 
                 &-second {
@@ -232,6 +259,7 @@
                     align-items: flex-start;
                     gap: 24px;
                     align-self: stretch;
+                    
 
                     @include mediaTablet {
                         flex-wrap: wrap;
@@ -340,7 +368,9 @@
 
                         @include mediaTablet {
                             padding: 164px 16px 24px 16px;
-                            width: 343px;
+                            border-radius:20px;
+                            max-width: 384px;
+                            width: 100%;
                         }
 
                         p {

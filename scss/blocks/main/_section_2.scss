@@ -1,4 +1,9 @@
 .section_2 {
+
+    @include mediaTablet {
+        
+    }
+
     &--main {
         padding: 32px 0 113px 0;
 
@@ -71,7 +76,7 @@
 
             @include mediaTablet {
                 flex-direction: column;
-                max-width: 392px;
+                max-width: 384px;
                 justify-content: center;
                 align-items: center;
             }

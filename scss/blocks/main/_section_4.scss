@@ -154,10 +154,12 @@
         }
 
         &-right {
+
             @include mediaTablet {
                 display: flex;
                 flex-direction: column;
                 gap: 4px;
+                max-width: 384px;
             }
 
             .block {
@@ -346,7 +348,7 @@
         &-block {
             display: flex;
 
-            width: 393px;
+            width: 384px;
             height: 323px;
 
             padding: 24px;
@@ -376,7 +378,6 @@
             @include mediaTablet {
                 border-radius: 20px;
                 padding: 16px;
-                width: 343px;
                 height: auto;
                 gap: 24px;
             }

@@ -111,9 +111,14 @@
 
                 .media_image {
                     position: relative;
+                    
 
                     .media_image_1 {
                         border-radius: 40px;
+
+                        @include mediaTablet {
+                            border-radius: 20px;
+                        }
                     }
 
                     .media_button {

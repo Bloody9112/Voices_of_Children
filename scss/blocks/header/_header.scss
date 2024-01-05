@@ -1,85 +1,101 @@
 .header {
-    // margin-bottom: 200px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 9;
+
+    box-shadow: 0px 9px 55px -26px rgba(0,0,0,0.5);
 
     @include mediaTablet {
         margin-bottom: 50px;
         margin-top: -40px;
     }
 
-    &--top-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 5px;
-
-        @include mediaTablet {
-            justify-content: flex-end;
-            padding-right: 60px;
-            position: fixed;
-            width: 100%;
-            padding-top: 40px;
-            padding-bottom: 20px;
-            z-index: 999;
-            background: rgba(255, 255, 255, 0.95);
-            
-        }
-        
-        .header--logo {
-            @include mediaTablet {
-                flex: 1;
-            }
-        }
-
-        &--mobile {
-            position: fixed;
-            z-index: 9;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            background-color: $white;
-
+    &--top {
+        &-row {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
-            row-gap: 45px;
+            flex-wrap: wrap;
+            gap: 5px;
 
-            padding: 40px 0;
-
-            .header--nav {
-                display: block;
-
-                .nav {
-                    &--list {
-                        flex-direction: column;
-                        align-items: center;
-                        row-gap: 25px;
-                    }
-                }
-            }
-            .header--menu-btn {
+            @include mediaTablet {
+                top: unset;
+                left: unset;
+                transform: unset;
+                justify-content: flex-end;
+                padding-right: 60px;
                 position: fixed;
-                top: 15px;
-                right: 15px;
-            }
-
-            .header--buttons {
-                @include mediaTablet {
-                    display: none;
-                }
+                width: 100%;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                z-index: 999;
+                background: rgba(255, 255, 255, 0.95);
             }
 
             .header--logo {
-                flex: 0;
+                @include mediaTablet {
+                    flex: 1;
+                }
             }
 
-            .header--logo-image {
-                display: unset;
-            }
-            .header--logo-image-mobile {
-                display: none;
+            &--mobile {
+                position: fixed;
+                z-index: 9;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: $white;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                row-gap: 45px;
+
+                padding: 40px 0;
+
+                .header--nav {
+                    display: block;
+
+                    .nav {
+                        &--list {
+                            flex-direction: column;
+                            align-items: center;
+                            row-gap: 25px;
+                        }
+                    }
+                }
+                .header--menu-btn {
+                    position: fixed;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .header--buttons {
+                    @include mediaTablet {
+                        display: none;
+                    }
+                }
+
+                .header--logo {
+                    flex: 0;
+                }
+
+                .header--logo-image {
+                    display: unset;
+                }
+                .header--logo-image-mobile {
+                    display: none;
+                }
             }
         }
     }
@@ -98,7 +114,6 @@
 
             .nav--buttons-yellow {
                 margin-left: -30px;
-
             }
         }
     }

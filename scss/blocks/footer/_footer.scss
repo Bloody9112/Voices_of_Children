@@ -1,18 +1,18 @@
 .footer {
     background: #72caed;
-    padding: 28px 0 61px 0;
+    padding: 38px 0 81px 0;
     display: flex;
     flex-direction: column;
 
     @include mediaTablet {
-        padding: 28px 0 35px 0;
+        padding: 28px 0 133px 0;
     }
 
     &--top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 10px;
+        gap: 25px;
 
         @include mediaTablet {
             flex-direction: column;
@@ -61,7 +61,10 @@
         &-right {
             display: flex;
             align-items: flex-start;
+            justify-content: space-between;
             gap: 86px;
+            max-width: 798px;
+            width: 100%;
 
             @include mediaTablet {
                 gap: 20px;
@@ -73,9 +76,19 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 24px;
+                max-width: 206px;
+                width: 100%;
 
                 @include mediaTablet {
                     gap: 20px;
+                }
+
+                &:nth-child(3) {
+                    position: relative;
+                    right: -4px;
+                    width: 210px;
+                    max-width: 100%;
+                    
                 }
 
                 &-block {
@@ -280,6 +293,7 @@
                     width: 100%;
 
                     @include mediaTablet {
+                        padding: 12px 16px;
                         min-width: 211px;
                         font-size: 14px;
                         line-height: 22px; /* 157.143% */
