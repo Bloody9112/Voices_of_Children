@@ -2599,6 +2599,10 @@ a:hover {
   transform: scale(1.025);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
+.section_6--media_about_us-columns .media_column .media_image .media_button img {
+  max-width: 110px;
+  max-height: 20px;
+}
 .section_6--media_about_us-columns .media_column .media_info {
   display: flex;
   flex-direction: column;
