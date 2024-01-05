@@ -361,7 +361,7 @@ a:hover {
 }
 
 .section_1 {
-  max-height: 752px;
+  min-height: 752px;
   margin-top: 66px;
 }
 @media screen and (max-width: 1050px) {
